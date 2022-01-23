@@ -1,6 +1,6 @@
 ## Portfolio
 
-I am a Full Stack Engineer with an experience of over 6 years. I have hands on experienceworking with web frameworks and technologies. I have extensively worked on react and nodejs for more then 3 years.
+I am a Full Stack Engineer with an experience of over 6 years. I have hands on experience working with web frameworks and technologies. I have extensively worked on react and nodejs for more then 3 years.
 
 ---
 
@@ -12,7 +12,9 @@ I am a Full Stack Engineer with an experience of over 6 years. I have hands on e
   <img src='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' height='30' width='auto' alt="js">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html" width="40" height="40">
   <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png' alt="css" width="40" height="40">
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="40" height="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="40" height="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="elasticSearch" width="140" height="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="mysql" width="80" height="40"/>
 </p>
 
 ---
@@ -20,12 +22,12 @@ I am a Full Stack Engineer with an experience of over 6 years. I have hands on e
 ## Experience
 
 ### **Software Engineer 2**
-### Condé Nast
+### Condé Nast (2021- Present)
 
 Working on development of Global unification platform for GQ. Involving in creating innovative solutions, improve performance and code optimisation techniques across the plateform to provide users best digital experience.
 
 ### **Software Development Engineer 2**
-### Meredith Corporation
+### Meredith Corporation (2015- 2021)
 
 Worked on creating the data pipeline to migrate the User generated Content from different source systems to a centralized database.
 
@@ -41,4 +43,4 @@ Worked on creating the data pipeline to migrate the User generated Content from 
 ### INTERESTS
 Apart from being a web developer, I read books. I like to explore new technologies.
 
-I enjoy being outdoors, so i go for run everyday. I love travelling to different countries and explore different cultures.
+I love travelling to different places and explore.
