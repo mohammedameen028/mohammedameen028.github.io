@@ -1,35 +1,43 @@
-## Welcome
+## Portfolio
 
-mohammed Ameen ulla - 7 years exp - full stack developer
+I am a Full Stack Engineer with an experience of over 6 years. I have hands on experienceworking with web frameworks and technologies. I have extensively worked on react and nodejs for more then 3 years.
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Skills
 
-```markdown
-Syntax highlighted code block
+<p align='left'>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="react" width="auto" height="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="angular" width="40" height="40"/>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' height='30' width='auto' alt="js">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html" width="40" height="40">
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png' alt="css" width="40" height="40">
+</p>
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+## Experience
 
-1. Numbered
-2. List
+### **Software Engineer 2**
+### Condé Nast
 
-**Bold** and _Italic_ and `Code` text
+Working with meetings and workshops team to provide best experience to faciltators and participants while running meetings . I worked on features like creating isolated environment for participants during meeting, providing them limited tools to collaborate and created navigation panel for facilitators to move participants to different slides
 
-[Link](url) and ![Image](src)
-```
+### **Software Development Engineer 2**
+### Meredith Corporation
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Worked with packages team to build mobile website using React, typsecript and graphql. Developerd checkout process for package bookings. Migrated the old code in perl to react for desktop website.
 
-### Jekyll Themes
+---
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mohammedameen028/mohammedameen028.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Education
 
-### Support or Contact
+### **Maharaja Institute of Technology**
+### B.E in Information Science and engineering (2011- 2015)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+---
+
+### INTERESTS
+Apart from being a web developer, I do content creation. I make videos related to frontend and general tech.
+
+I enjoy being outdoors, so i go for run everyday. I love travelling to different countries and explore different cultures.
