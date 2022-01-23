@@ -1,2 +1,12 @@
+title: Mohammed Ameen ulla
+logo: "/profile.png?raw=true" # your photo (or logo) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+ Full Stack Engineer
+  <br><br>
+  <a href="mailto:mohammedameen028@gmail.com">mohammedameen028@gmail.com </a>
+  <br>
+  <a href="https://www.linkedin.com/in/mohammed-ameen-551583bb/">LinkedIn Profile</a>
+  <br>
+  <a href="https://www.gihub.com/mohammedameen028/">Gihub</a> 
 theme: jekyll-theme-minimal
 
