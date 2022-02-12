@@ -26,7 +26,7 @@ I am a Full Stack Engineer with an experience of over 6 years. I have hands on e
 
 Working on development of Global unification platform for GQ. Involving in creating innovative solutions, improve performance and code optimisation techniques across the plateform to provide users best digital experience.
 
-### **Software Development Engineer 2**
+### **Software Development Engineer**
 ### Meredith Corporation (2015- 2021)
 
 Worked on creating the data pipeline to migrate the User generated Content from different source systems to a centralized database.
