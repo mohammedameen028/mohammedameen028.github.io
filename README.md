@@ -1,6 +1,6 @@
 ## Portfolio
 
-I am a Full Stack Engineer with an experience of over 6 years. I have hands on experience working with web frameworks and technologies. I have extensively worked on react and nodejs for more then 3 years.
+I am a Full Stack Engineer with an experience of over 6 years. I have hands on experience working with web frameworks and technologies. I have extensively worked on react and nodejs for more then 4 years.
 
 ---
 
