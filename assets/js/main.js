@@ -75,13 +75,19 @@
   function runCounters() {
     document.querySelectorAll('.stat-num').forEach(el => {
       const target = parseInt(el.dataset.target, 10);
+      const suffix = el.textContent.replace(/[0-9]/g, '').trim();
+      const counter = { value: 0 };
+
       anime({
-        targets: el,
-        innerHTML: [0, target],
+        targets: counter,
+        value: target,
         duration: 1200,
         delay: Math.random() * 200,
         easing: 'easeOutExpo',
-        round: 1
+        round: 1,
+        update: () => {
+          el.textContent = String(Math.round(counter.value)) + suffix;
+        }
       });
     });
   }
