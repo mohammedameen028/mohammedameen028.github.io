@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohammed Ameen Ulla | Engineering Manager</title>
+<meta name="description" content="Engineering Manager with 11+ years of experience building and scaling high-impact platform teams and distributed systems across global media and publishing organizations."/>
+<meta property="og:title" content="Mohammed Ameen Ulla | Engineering Manager"/>
+<meta property="og:description" content="Platform Engineering · Distributed Systems · Growth Platforms"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://mohammedameen028.github.io/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <button class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">MAU.</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-resume" href="assets/Mohammed_Ameen_Resume.pdf" target="_blank" rel="noopener">
+        Resume
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="assets/Mohammed_Ameen_Resume.pdf" target="_blank" rel="noopener" onclick="closeMobile()">Download Resume</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════ -->
+<section id="hero-section" aria-label="Introduction">
+  <div class="hero">
+    <div class="hero-eyebrow" id="heroEyebrow">
+      <span class="dot" aria-hidden="true"></span>
+      Engineering Manager · Bangalore, India
+    </div>
+    <h1 class="hero-h1" id="heroH1">
+      Building platforms<br/>
+      that scale <span class="accent">teams</span><br/>
+      and <span class="accent">products</span>.
+    </h1>
+    <p class="hero-sub" id="heroSub">
+      11+ years turning complex engineering problems into<br class="br-desk"/>
+      high-impact platforms across global media organisations.
+    </p>
+    <div class="hero-meta" id="heroMeta">
+      <span class="meta-chip">Platform Engineering</span>
+      <span class="meta-chip">Distributed Systems</span>
+      <span class="meta-chip">Growth Platforms</span>
+      <span class="meta-chip">Team Building</span>
+    </div>
+    <div class="hero-ctas" id="heroCtas">
+      <a class="btn-primary" href="#experience">
+        View Experience
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="btn-outline" href="#contact">Get in Touch</a>
+    </div>
+    <div class="hero-stats" id="heroStats">
+      <div class="stat">
+        <span class="stat-num" data-target="11">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Engineering Teams</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Global Brands</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="48">0</span><span class="stat-plus">%</span>
+        <span class="stat-label">User Acquisition via Newsletter</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════ -->
+<section id="about" aria-label="About">
+  <div class="container section-pad">
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <span class="sec-label" aria-label="Section 01">01.</span>
+        <h2 class="sec-title">About Me</h2>
+        <div class="about-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/mohammed-ameen-551583bb/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a class="icon-link" href="https://github.com/mohammedameen028" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="icon-link" href="mailto:mohammedameen028@gmail.com" aria-label="Send email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="about-p reveal reveal-d1">
+          I'm an Engineering Manager with 11+ years of experience building and scaling high-impact platform teams and distributed systems across global media and publishing organisations.
+        </p>
+        <p class="about-p reveal reveal-d2">
+          I specialize in founding teams from 0→1, driving platform strategy, and delivering scalable systems that directly influence user growth, engagement, and business outcomes. Known for bringing clarity to complex problem spaces, building strong engineering culture, and balancing speed with long-term technical excellence.
+        </p>
+        <div class="about-highlights reveal reveal-d3">
+          <div class="highlight-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Founded &amp; scaled newsletter platform team from 0→1
+          </div>
+          <div class="highlight-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            4 consecutive quarters of on-time platform delivery
+          </div>
+          <div class="highlight-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            30+ global brands across 10+ countries
+          </div>
+          <div class="highlight-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            2× user engagement uplift via platform initiatives
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     EXPERIENCE
+═══════════════════════════════════════════════════ -->
+<section id="experience" aria-label="Work Experience">
+  <div class="container section-pad">
+    <div class="reveal">
+      <span class="sec-label">02.</span>
+      <h2 class="sec-title">Experience</h2>
+    </div>
+
+    <div class="timeline" role="list">
+
+      <!-- ROLE: EM @ Condé Nast -->
+      <div class="tl-item reveal reveal-d1" role="listitem">
+        <div class="tl-dot tl-dot--active" aria-hidden="true"></div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div>
+              <div class="tl-date">Jul 2021 – Present</div>
+              <h3 class="tl-role">Engineering Manager</h3>
+              <div class="tl-company">
+                <span class="company-badge">Condé Nast Technology Lab</span>
+              </div>
+            </div>
+            <span class="tl-tenure" aria-label="Current position">Current</span>
+          </div>
+          <p class="tl-context">
+            Leading 3 cross-functional engineering teams across platform engineering, customer preference systems, consent management, and global email/newsletter platforms supporting 30+ brands across 10+ countries.
+          </p>
+
+          <div class="tl-sub-roles">
+            <!-- Sub-role: AEM -->
+            <div class="sub-role">
+              <div class="sub-role-header">
+                <span class="sub-role-title">Associate Engineering Manager</span>
+                <span class="sub-role-date">Oct 2023 – Present</span>
+              </div>
+              <p class="sub-role-context">Led scale-up of the Customer Preference Platform (CPP) as the centralised source of truth for user consent, privacy preferences, and subscriptions across all Condé Nast brands globally.</p>
+              <ul class="tl-bullets">
+                <li>Integrated Ethyca for enterprise consent management ensuring GDPR and CCPA compliance across international markets</li>
+                <li>Improved platform reliability, system performance, and developer experience across teams consuming CPP services</li>
+                <li>Coordinated execution across product and engineering stakeholders to align roadmap priorities and delivery milestones</li>
+                <li>Strengthened platform ownership and operational maturity across privacy and consent systems</li>
+              </ul>
+            </div>
+
+            <!-- Sub-role: EM newsletter -->
+            <div class="sub-role">
+              <div class="sub-role-header">
+                <span class="sub-role-title">Engineering Manager — Newsletter Platform</span>
+                <span class="sub-role-date">Jan 2022 – Aug 2023</span>
+              </div>
+              <div class="impact-chips">
+                <span class="chip chip--green">2× User Engagement</span>
+                <span class="chip chip--blue">48% User Acquisition</span>
+                <span class="chip chip--amber">4 Qtrs On-Time Delivery</span>
+              </div>
+              <div class="tl-two-col">
+                <div>
+                  <p class="col-heading">Leadership &amp; Business Impact</p>
+                  <ul class="tl-bullets">
+                    <li>Founded and scaled the newsletter platform team from 0→1, establishing a core growth platform now responsible for a major share of user acquisition and engagement</li>
+                    <li>Delivered 4 consecutive quarters of on-time execution across critical platform programs</li>
+                    <li>Built cross-functional partnerships across Product, Data, Security, Infrastructure, and Marketing</li>
+                    <li>Mentored engineers across levels through clear ownership models, coaching, and quality standards</li>
+                    <li>Created operational clarity in high-dependency environments by driving prioritisation and trade-offs</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="col-heading">Platform &amp; Technical Leadership</p>
+                  <ul class="tl-bullets">
+                    <li>Architected and delivered a global end-to-end newsletter platform covering onboarding, subscription lifecycle, campaign integration, and delivery workflows at enterprise scale</li>
+                    <li>Led migration to Iterable for real-time campaign orchestration and scalable audience segmentation</li>
+                    <li>Designed event-driven webhook ingestion architecture using API Gateway, SNS, SQS, and Lambda</li>
+                    <li>Built real-time subscription/unsubscription systems with preference sync across CPP and downstream systems</li>
+                    <li>Partnered with InfoSec to implement SPF, DKIM, and DMARC for improved email deliverability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROLE: SSE -->
+      <div class="tl-item reveal reveal-d2" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div>
+              <div class="tl-date">Jan 2022 – Aug 2023</div>
+              <h3 class="tl-role">Senior Software Engineer <span class="tl-promo">SE2 → SE3</span></h3>
+              <div class="tl-company">
+                <span class="company-badge">Condé Nast Technology Lab</span>
+              </div>
+            </div>
+          </div>
+          <p class="tl-context">Built and scaled core platform systems supporting user consent, frontend platform engineering, and global brand delivery.</p>
+          <ul class="tl-bullets">
+            <li>Developed and scaled the Customer Preference Platform (CPP) for centralised consent and subscription management</li>
+            <li>Owned frontend platform engineering for flagship global brands including Vogue, GQ, and Condé Nast Traveller across 11 international markets</li>
+            <li>Architected reusable component libraries and platform standards that improved developer velocity and cross-brand consistency</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ROLE: Meredith -->
+      <div class="tl-item reveal reveal-d3" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div>
+              <div class="tl-date">Aug 2015 – Jul 2021</div>
+              <h3 class="tl-role">Full Stack Developer</h3>
+              <div class="tl-company">
+                <span class="company-badge company-badge--alt">Meredith Corporation <span class="formerly">(formerly Time Inc.)</span></span>
+              </div>
+            </div>
+            <span class="tl-tenure">6 Years</span>
+          </div>
+          <p class="tl-context">Delivered large-scale platform and subscription systems supporting millions of users across global publishing operations.</p>
+          <ul class="tl-bullets">
+            <li>Designed and implemented enterprise data migration pipelines across publishing platforms</li>
+            <li>Built operational dashboards for real-time monitoring of migration systems and platform health</li>
+            <li>Developed Apple Pay and Android Pay integrations with subscription management systems for large-scale consumer platforms</li>
+            <li>Contributed to Web Enabled Services (WES) powering global publication fulfilment workflows</li>
+            <li>Recognised as <strong>Star Performer</strong> for delivering critical projects on time and within budget</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════════════ -->
+<section id="skills" aria-label="Skills">
+  <div class="container section-pad">
+    <div class="reveal">
+      <span class="sec-label">03.</span>
+      <h2 class="sec-title">Skills &amp; Expertise</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M17.5 14v3m0 0v3m0-3h3m-3 0h-3"/></svg>
+        </div>
+        <h3 class="skill-card-title">Leadership</h3>
+        <div class="skill-tags">
+          <span class="stag">Team Building &amp; Mentorship</span>
+          <span class="stag">Platform Strategy</span>
+          <span class="stag">Cross-functional Partnerships</span>
+          <span class="stag">Delivery Execution</span>
+          <span class="stag">Roadmap Prioritisation</span>
+          <span class="stag">Engineering Culture</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3 class="skill-card-title">Architecture</h3>
+        <div class="skill-tags">
+          <span class="stag">Distributed Systems</span>
+          <span class="stag">Event-Driven Architecture</span>
+          <span class="stag">Microservices</span>
+          <span class="stag">Platform Engineering</span>
+          <span class="stag">Consent &amp; Preference Platforms</span>
+          <span class="stag">Growth &amp; Engagement Systems</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d3">
+        <div class="skill-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="skill-card-title">Technical</h3>
+        <div class="skill-tags">
+          <span class="stag">JavaScript / Node.js</span>
+          <span class="stag">React.js</span>
+          <span class="stag">AWS (API GW · SNS · SQS · Lambda)</span>
+          <span class="stag">Serverless Architecture</span>
+          <span class="stag">MongoDB · MySQL · Elasticsearch</span>
+          <span class="stag">CI/CD · Infrastructure as Code</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="skill-card-title">Compliance &amp; DevOps</h3>
+        <div class="skill-tags">
+          <span class="stag">GDPR &amp; CCPA Compliance</span>
+          <span class="stag">SPF · DKIM · DMARC</span>
+          <span class="stag">Monitoring &amp; Logging</span>
+          <span class="stag">Developer Productivity</span>
+          <span class="stag">Stakeholder Management</span>
+          <span class="stag">Operational Maturity</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════ -->
+<section id="contact" aria-label="Contact">
+  <div class="container section-pad">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="sec-label">04.</span>
+        <h2 class="sec-title">Let's connect.</h2>
+        <p class="contact-sub">
+          Open to senior Engineering Manager and Director-level opportunities. I'm particularly interested in roles focused on platform engineering, developer productivity, or growth systems at scale.
+        </p>
+        <div class="contact-direct">
+          <a class="contact-link" href="mailto:mohammedameen028@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            mohammedameen028@gmail.com
+          </a>
+          <a class="contact-link" href="tel:+917204069441">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.35 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+            +91 720 406 9441
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/mohammed-ameen-551583bb/" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/mohammed-ameen
+          </a>
+          <a class="contact-link" href="https://github.com/mohammedameen028" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/mohammedameen028
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal reveal-d2">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="nameInput">Name</label>
+            <input class="form-input" id="nameInput" type="text" placeholder="Your name" autocomplete="name" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="emailInput">Email</label>
+            <input class="form-input" id="emailInput" type="email" placeholder="you@company.com" autocomplete="email" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="messageInput">Message</label>
+            <textarea class="form-input" id="messageInput" rows="5" placeholder="Tell me about the role or opportunity..." required></textarea>
+          </div>
+          <button class="form-submit" type="submit" id="formSubmit">
+            Send Message
+          </button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">Mohammed Ameen Ulla</span>
+    <p class="footer-copy">
+      Engineering Manager · Platform Engineering · Bengaluru
+    </p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/mohammed-ameen-551583bb/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://github.com/mohammedameen028" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="mailto:mohammedameen028@gmail.com" aria-label="Email">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

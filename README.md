@@ -1,46 +1,156 @@
-## Portfolio
+# Mohammed Ameen Ulla — Portfolio
 
-I am a Full Stack Engineer with an experience of over 6 years. I have hands on experience working with web frameworks and technologies. I have extensively worked on react and nodejs for more then 4 years.
+Personal portfolio site hosted at [mohammedameen028.github.io](https://mohammedameen028.github.io)
+
+## Stack
+
+Pure HTML · CSS · JavaScript — no build step required.  
+Animation powered by [Anime.js](https://animejs.com/) via CDN.
+
+## Project Structure
+
+```
+mohammedameen028.github.io/
+├── index.html                  ← Main page (all sections)
+├── assets/
+│   ├── css/
+│   │   └── style.css           ← All styles
+│   ├── js/
+│   │   └── main.js             ← Animations + interactions
+│   └── Mohammed_Ameen_Resume.pdf  ← ⚠️ Add your resume PDF here
+└── README.md
+```
+
+## Deployment (GitHub Pages)
+
+### Option A — Replace existing repo
+
+```bash
+# Clone your current portfolio repo
+git clone https://github.com/mohammedameen028/mohammedameen028.github.io
+cd mohammedameen028.github.io
+
+# Remove the old Jekyll files
+rm -rf _config.yml _layouts _includes Gemfile* *.md
+
+# Copy all files from this project into the repo root
+# (copy index.html, assets/ folder, README.md)
+
+# Add your resume PDF
+cp /path/to/your/resume.pdf assets/Mohammed_Ameen_Resume.pdf
+
+# Commit and push
+git add .
+git commit -m "feat: new portfolio — refined minimalist design"
+git push origin main
+```
+
+GitHub Pages will auto-deploy within ~2 minutes. Visit `https://mohammedameen028.github.io` to confirm.
+
+### Option B — Fresh start
+
+```bash
+git init
+git remote add origin https://github.com/mohammedameen028/mohammedameen028.github.io.git
+git add .
+git commit -m "feat: portfolio v2"
+git push -u origin main --force
+```
+
+### GitHub Pages Settings
+
+In your repo: **Settings → Pages → Source → Deploy from branch → main → / (root)**
+
+No `_config.yml` or Jekyll config needed — GitHub Pages serves static HTML directly.
 
 ---
 
-## Skills
+## Adding Your Resume PDF
 
-<p align='left'>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="react" width="auto" height="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="nodejs" width="40" height="40"/>
-  <img src='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' height='30' width='auto' alt="js">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html" width="40" height="40">
-  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png' alt="css" width="40" height="40">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="40" height="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="elasticSearch" width="140" height="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="mysql" width="80" height="40"/>
-</p>
+Place your resume at:
+```
+assets/Mohammed_Ameen_Resume.pdf
+```
+
+The "Resume" nav button and the download link both point to this path.  
+If you rename the file, update the `href` in `index.html` (two places: nav and the footer area).
 
 ---
 
-## Experience
+## Customising Content
 
-### **Software Engineer 2**
-### Condé Nast (2021- Present)
+All content is in `index.html`. Search for these markers to update:
 
-Working on development of Global unification platform for GQ. Involving in creating innovative solutions, improve performance and code optimisation techniques across the plateform to provide users best digital experience.
-
-### **Software Development Engineer**
-### Meredith Corporation (2015- 2021)
-
-Worked on creating the data pipeline to migrate the User generated Content from different source systems to a centralized database.
-
----
-
-## Education
-
-### **Maharaja Institute of Technology**
-### B.E in Information Science and engineering (2011- 2015)
+| What | Search for |
+|---|---|
+| Photo / avatar | Add `<img>` tag in `.hero` section if desired |
+| LinkedIn URL | `linkedin.com/in/mohammed-ameen-551583bb` |
+| GitHub URL | `mohammedameen028` |
+| Email | `mohammedameen028@gmail.com` |
+| Phone | `+91-7204069441` |
+| Projects section | Add a `<!-- PROJECTS -->` section between Experience and Skills |
 
 ---
 
-### INTERESTS
-Apart from being a web developer, I read books. I like to explore new technologies.
+## Adding Real Contact Form Email
 
-I love travelling to different places and explore.
+The contact form currently opens your mail client (`mailto:`). GitHub Pages is static, so there's no server.  
+To receive emails directly in your inbox, use one of these free services:
+
+### Formspree (recommended — free tier, 50 submissions/month)
+
+1. Sign up at [formspree.io](https://formspree.io)
+2. Create a new form, get your form ID (e.g. `xabc1234`)
+3. In `assets/js/main.js`, replace the mailto block with:
+
+```javascript
+const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name, email, message })
+});
+if (res.ok) {
+  submit.textContent = 'Message Sent ✓';
+  note.textContent = 'Thanks! I\'ll be in touch soon.';
+} else {
+  note.textContent = 'Something went wrong. Please email me directly.';
+}
+```
+
+### EmailJS (client-side, no backend)
+
+See [emailjs.com/docs](https://www.emailjs.com/docs/) — free tier handles 200 emails/month.
+
+---
+
+## Performance
+
+- No build step, no framework overhead
+- Fonts loaded via Google Fonts with `display=swap`
+- Anime.js loaded from cdnjs CDN (~17KB gzipped)
+- All images use `loading="lazy"` (add to any `<img>` tags you add)
+- Respects `prefers-reduced-motion`
+
+Target Lighthouse scores: **Performance 95+ · Accessibility 100 · Best Practices 100 · SEO 100**
+
+---
+
+## Adding a Projects Section
+
+Between `</section>` (after Experience) and `<section id="skills">`, add:
+
+```html
+<section id="projects">
+  <div class="container section-pad">
+    <div class="reveal">
+      <span class="sec-label">03.</span>
+      <h2 class="sec-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+      <!-- Add project cards here -->
+    </div>
+  </div>
+</section>
+```
+
+Then update the `sec-label` numbers on Skills (04) and Contact (05) accordingly, and add `projects` to the `sections` array in `main.js`.
