@@ -227,7 +227,6 @@ nav {
   font-family:var(--font-display); font-size:36px; font-weight:800;
   color:var(--primary); line-height:1; letter-spacing:-.02em;
 }
-.stat-plus { font-family:var(--font-display); font-size:24px; font-weight:800; color:var(--primary) }
 .stat-label {
   flex-basis:100%;
   margin-top:14px;
