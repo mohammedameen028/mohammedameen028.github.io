@@ -227,30 +227,17 @@
       submit.disabled = true;
       submit.textContent = 'Sending…';
 
-      /* 
-        GitHub Pages is static — no server-side email.
-        This opens the user's mail client as a fallback.
-        To add real email: replace this with a Formspree/EmailJS call.
-        See README.md for instructions.
-      */
-      const mailtoLink = `mailto:mohammedameen028@gmail.com`
-        + `?subject=${encodeURIComponent('Portfolio enquiry from ' + name)}`
-        + `&body=${encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>')}`;
-
-      // Simulate brief loading then open mailto
-      setTimeout(() => {
-        window.location.href = mailtoLink;
+      const res = await fetch('https://formspree.io/f/mlgvllpy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      });
+      if (res.ok) {
         submit.textContent = 'Message Sent ✓';
-        submit.style.background = '#10b981';
-        note.style.color = 'var(--primary)';
-        note.textContent = 'Your email client has been opened. Thank you!';
-        anime({
-          targets: submit,
-          scale: [.96, 1],
-          duration: 300,
-          easing: 'spring(1, 80, 14, 0)'
-        });
-      }, 800);
+        note.textContent = 'Thanks! I\'ll be in touch soon.';
+      } else {
+        note.textContent = 'Something went wrong. Please email me directly.';
+      }
     });
   }
 
