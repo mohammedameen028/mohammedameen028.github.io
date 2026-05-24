@@ -379,6 +379,73 @@ nav {
 .tl-bullets strong { color:var(--on-surface); font-weight:600 }
 
 /* ══════════════════════════════════════════════════
+   LEADERSHIP & SCALE
+══════════════════════════════════════════════════ */
+.ls-grid {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+}
+.ls-card {
+  background:var(--bg-low);
+  border:1px solid var(--outline);
+  border-radius:var(--radius-lg);
+  padding:28px;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  gap:16px;
+  position:relative;
+  overflow:hidden;
+  transition:border-color .3s, transform .3s;
+}
+.ls-card::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg, var(--primary), transparent);
+  opacity:0;
+  transition:opacity .3s;
+}
+.ls-card:hover {
+  border-color:rgba(78,222,163,.25);
+  transform:translateY(-5px);
+}
+.ls-card:hover::before { opacity:1 }
+.ls-icon {
+  width:46px; height:46px;
+  background:var(--primary-glow);
+  border:1px solid rgba(78,222,163,.2);
+  border-radius:var(--radius);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--primary);
+  flex-shrink:0;
+}
+.ls-icon svg { width:20px; height:20px }
+.ls-content { display:flex; flex-direction:column; gap:10px }
+.ls-title {
+  font-family:var(--font-display);
+  font-size:15px; font-weight:700; line-height:1.35;
+  color:var(--on-surface);
+}
+.ls-desc {
+  font-size:13px; line-height:1.75;
+  color:var(--on-surface-var);
+}
+.ls-metric {
+  display:flex; flex-direction:column; gap:3px;
+  padding-top:16px;
+  border-top:1px solid var(--outline);
+}
+.ls-metric-num {
+  font-family:var(--font-display);
+  font-size:28px; font-weight:800; line-height:1;
+  color:var(--primary); letter-spacing:-.02em;
+}
+.ls-metric-label {
+  font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--on-surface-var);
+}
+
+/* ══════════════════════════════════════════════════
    SKILLS
 ══════════════════════════════════════════════════ */
 #skills { background:var(--bg-low) }
@@ -490,11 +557,13 @@ footer {
   .about-left { position:static }
   .tl-two-col { grid-template-columns:1fr }
   .contact-grid { grid-template-columns:1fr; gap:48px }
+  .ls-grid { grid-template-columns:repeat(2,1fr) }
 }
 @media(max-width:860px){
   .nav-links { display:none }
   .menu-btn { display:block }
   .skills-grid { grid-template-columns:1fr }
+  .ls-grid { grid-template-columns:1fr }
   .hero-stats { flex-direction:column; max-width:360px }
   .stat-divider { width:auto; height:1px; align-self:auto }
 }
