@@ -159,7 +159,7 @@
 
   /* ── ACTIVE NAV ───────────────────────────── */
   function initActiveNav() {
-    const sections = ['about', 'experience', 'skills', 'contact'];
+    const sections = ['about', 'experience', 'leadership', 'skills', 'contact'];
     const links = document.querySelectorAll('.nav-links a[href^="#"]');
 
     window.addEventListener('scroll', () => {
