@@ -234,6 +234,20 @@ nav {
 }
 .stat-divider { width:1px; background:var(--outline); align-self:stretch }
 
+.hero-philosophy {
+  margin-top:22px;
+  max-width:840px;
+  padding:16px 18px;
+  border:1px solid var(--outline);
+  border-left:3px solid var(--primary);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.02);
+  color:var(--on-surface-var);
+  font-size:14px;
+  line-height:1.75;
+  font-style:italic;
+}
+
 /* ══════════════════════════════════════════════════
    ABOUT
 ══════════════════════════════════════════════════ */
