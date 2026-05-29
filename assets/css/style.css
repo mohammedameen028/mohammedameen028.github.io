@@ -567,6 +567,13 @@ footer {
 ══════════════════════════════════════════════════ */
 @media(max-width:1024px){
   :root{ --section-gap:90px; --gutter:28px }
+  #about .container,
+  #experience .container,
+  #leadership .container,
+  #skills .container,
+  #contact .container {
+    padding-left:calc(var(--gutter) + 12px);
+  }
   .about-grid { grid-template-columns:1fr; gap:40px }
   .about-left { position:static }
   .tl-two-col { grid-template-columns:1fr }
@@ -583,6 +590,13 @@ footer {
 }
 @media(max-width:600px){
   :root{ --section-gap:72px; --gutter:20px }
+  #about .container,
+  #experience .container,
+  #leadership .container,
+  #skills .container,
+  #contact .container {
+    padding-left:calc(var(--gutter) + 10px);
+  }
   .hero-ctas { flex-direction:column }
   .btn-primary, .btn-outline { width:100%; justify-content:center }
   .tl-body { padding:20px }
